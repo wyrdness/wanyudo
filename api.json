@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/wanyudo",
     "maintainers": [
       {
@@ -16,72 +16,137 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "wanyudo",
-    "name": "",
-    "aliases": [],
+    "name": "Wanyūdō",
+    "aliases": [
+      { "name": "Wanyudo", "language": "Japanese (romanization)" },
+      { "name": "Firewheel", "language": "English (translation)" },
+      { "name": "Soultaker", "language": "English (translation)" },
+      { "name": "輪入道", "language": "Japanese (kanji)", "meaning": "wheel monk / wheel priest" },
+      { "name": "Katawaguruma", "language": "Japanese", "meaning": "one-wheeled cart; closely related yokai often discussed alongside wanyūdō" }
+    ],
     "category": "ENTITY_SPIRIT",
-    "subcategory": "Unknown",
+    "subcategory": "Yōkai (Japanese folkloric being)",
     "tags": [
+      "yokai",
+      "japanese-folklore",
+      "fire",
+      "wheel",
+      "ghost",
+      "edo-period",
+      "asia",
       "folklore",
       "mythology"
     ],
     "status": "documented",
     "description": {
-      "summary": "No description available.",
-      "full": ""
+      "summary": "A Japanese yōkai depicted as a flaming oxcart wheel with a tormented man's face at its hub, said to roll along roads at night, steal souls, and punish the curious in Edo-period folklore.",
+      "full": "Wanyūdō (輪入道, 'wheel monk' or 'wheel priest') is a yōkai of Japanese folklore depicted as a flaming, single oxcart wheel with the angry, often tonsured face of a man set in its hub. It is most often connected to Kyoto and the wider Kinai region, where it is said to roll along roads at night, particularly in the vicinity of cemeteries, temples, and gates, devouring or stealing the souls of any who look upon it. A famous tale recorded in the Edo-period kaidan collection Shokoku Hyakumonogatari (1677) describes a Kyoto woman who, peeking through a sliding door at the rumbling sound outside, sees the wheel-monster carry off the legs of her child. A common protective measure recorded in folk practice is to post a strip of paper bearing the phrase 'this place is the village of Shōbo' (此所勝母の里) at the door, which is said to turn the wanyūdō away. The yokai was popularised in graphic form by Toriyama Sekien in Konjaku Gazu Zoku Hyakki (Supplement to the Hundred Demons of the Past and Present, 1779) and is closely related to katawaguruma, an earlier one-wheeled-cart yokai depicted as a woman riding a flaming wheel."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Japanese 輪入道, composed of 輪 (wa, 'wheel') + 入道 (nyūdō, 'one who has entered the [Buddhist] path'; a tonsured monk or, more loosely, a tonsured man).",
+      "meaning": "Literally 'wheel monk' or 'wheel priest'; the name combines the wheel-like body with a tonsured (often glaring) male face.",
+      "first_use": "Documented in Edo-period kaidan literature (Shokoku Hyakumonogatari, 1677); standardised graphically by Toriyama Sekien (1779)."
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "ENTITY_SPIRIT",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Yōkai",
+      "subtype": "Wheel/road yōkai",
+      "variant": "Edo-period Japanese"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "katawaguruma", "name": "Katawaguruma", "relationship": "related", "description": "Female one-wheeled-cart yōkai depicted earlier than wanyūdō; the two are likely variants of a single underlying tradition" },
+      { "id": "onibi", "name": "Onibi", "relationship": "related", "description": "Japanese 'demon fire' / will-o'-the-wisp yōkai" },
+      { "id": "yamabiko", "name": "Yamabiko", "relationship": "similar", "description": "Mountain echo yōkai of Edo-period kaidan literature" },
+      { "id": "shokoku-hyakumonogatari", "name": "Shokoku Hyakumonogatari yōkai corpus", "relationship": "superset", "description": "1677 kaidan collection in which wanyūdō / katawaguruma first prominently appears" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "coloration": ["fire-orange", "red", "black (charred wheel)"],
+      "features": [
+        { "feature": "Flaming oxcart wheel", "description": "A single large oxcart wheel wrapped in flames, the dominant form of the yokai", "frequency": "always" },
+        { "feature": "Male face at the hub", "description": "An angry, often tonsured man's face fixed in the centre of the wheel", "frequency": "always" },
+        { "feature": "Glaring eyes and bared teeth", "description": "Toriyama Sekien's iconic 1779 illustration shows the face mid-shout, with bared teeth", "frequency": "common" }
+      ],
+      "morphology": "An animated, flaming wheel with a human face; no body in the conventional sense."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Soul theft", "description": "Steals or devours the souls of those who look upon it", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Mutilation of bystanders", "description": "In the Shokoku Hyakumonogatari tale, takes the legs of a child whose mother peers out at the noise of the wheel", "frequency": "occasional", "evidence_level": "folklore" },
+      { "ability": "Engulfing fire", "description": "Wreathed in flames that scorch the road and any pursuer", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Repulsion by paper charm", "description": "Said to be turned away by a slip of paper reading 'this place is the village of Shōbo' (此所勝母の里) on the door", "frequency": "common", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "aggressive",
+      "social_structure": "solitary",
+      "habitat_preference": ["roads at night", "city outskirts", "temple precincts and cemeteries", "Kyoto and the Kinai region"],
+      "diet": "Said to consume souls and the bodies of those who look upon it.",
+      "patterns": [
+        "Rolls along roads at night, often near city gates or cemeteries",
+        "Punishes the curious; the warning is explicitly that one should not look out at the noise it makes",
+        "Repelled by appropriate Buddhist or apotropaic charm-papers"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Edo-period Japan, with strongest folk associations to Kyoto and the wider Kinai region; subsequently transmitted across Japan through kaidan literature and yōkai art.",
+      "continents": ["Asia"],
+      "countries": ["Japan"],
+      "regions": [
+        "Kinai",
+        "Kyoto Prefecture",
+        "Kantō (through later transmission)"
+      ]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Kyoto",
+        "location": {
+          "description": "Kyoto, capital of Heian and medieval Japan; setting of the canonical Shokoku Hyakumonogatari tale",
+          "country": "Japan",
+          "region": "Kyoto Prefecture",
+          "coordinates": { "latitude": 35.0116, "longitude": 135.7681 }
+        },
+        "peak_period": "Edo period (1603–1868)",
+        "notes": "Most famous wanyūdō tales are set in or near Kyoto."
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
-        "circa": true,
-        "source": "Traditional folklore"
-      }
+        "date": "1677",
+        "circa": false,
+        "source": "Shokoku Hyakumonogatari (1677), an Edo-period kaidan collection"
+      },
+      "peak_activity_periods": [
+        { "period": "1670s–1780s", "description": "Edo-period kaidan literature and yōkai art (Shokoku Hyakumonogatari, Toriyama Sekien) establish the wanyūdō image" },
+        { "period": "20th–21st century", "description": "Adoption into Japanese popular media: manga, anime, and video games" }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Edo-period Japanese kaidan (ghost-story) literature and the broader yōkai tradition.",
+      "earliest_accounts": "First widely-circulated tale in Shokoku Hyakumonogatari (1677), which describes a Kyoto woman whose child is mutilated by the wheel.",
+      "folklore_connections": "Closely related to the older female yōkai katawaguruma; the two figures probably share a single underlying tradition that branched into separate male (wanyūdō) and female (katawaguruma) forms."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1677-01-01", "event": "Shokoku Hyakumonogatari published, including a katawaguruma / wanyūdō tale set in Kyoto", "significance": "Earliest widely circulated literary attestation", "source": "Shokoku Hyakumonogatari (1677)" },
+      { "date": "1779-01-01", "event": "Toriyama Sekien publishes Konjaku Gazu Zoku Hyakki, including the canonical illustration of wanyūdō as a flaming wheel with a tonsured man's face", "significance": "Codifies the visual iconography that has dominated since", "source": "Toriyama Sekien, Konjaku Gazu Zoku Hyakki (1779)" }
+    ],
+    "modern_era": "Wanyūdō appears regularly in modern Japanese popular media, including the anime and manga GeGeGe no Kitarō, the video games Nioh and Ōkami, and Hell Girl (Jigoku Shōjo, 2005), in which a character bearing the name appears in human form."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +157,134 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "wanyudo-evidence-shokoku",
+        "type": "kaidan collection",
+        "name": "Shokoku Hyakumonogatari",
+        "date": "1677",
+        "description": "Edo-period collection of one hundred ghost stories from various provinces, including the canonical katawaguruma / wanyūdō tale set in Kyoto.",
+        "status": "verified",
+        "analysis": "Earliest widely transmitted literary record of the wheel-yokai tradition.",
+        "source": "Shokoku Hyakumonogatari (1677)"
+      },
+      {
+        "id": "wanyudo-evidence-sekien",
+        "type": "ehon (illustrated book)",
+        "name": "Toriyama Sekien, Konjaku Gazu Zoku Hyakki",
+        "date": "1779",
+        "description": "Edo-period illustrated yōkai compendium that contains the canonical image of wanyūdō as a flaming oxcart wheel with a tonsured male face.",
+        "status": "verified",
+        "analysis": "Defines the standard visual iconography of the yokai for subsequent centuries.",
+        "source": "Toriyama Sekien (1779)"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Vengeful spirit (onryō) of an executed criminal",
+        "description": "Some folk readings tie the wanyūdō to the spirit of a tonsured criminal punished by being broken on a wheel or dragged behind a flaming oxcart, returning as a road-haunting yokai.",
+        "proponents": ["Edo-period kaidan tradition"],
+        "evidence_cited": ["Iconographic emphasis on a tonsured glaring face", "Association with roads and gates as sites of execution and exile"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Literary tradition and didactic kaidan",
+        "description": "Wanyūdō is best understood as a product of Edo-period kaidan literature and yokai art rather than as an autonomous folk-belief about a real road-haunting wheel.",
+        "proponents": ["Modern yōkai studies (Komatsu Kazuhiko, Michael Dylan Foster)"],
+        "evidence_cited": ["Concentrated literary and visual transmission via Shokoku Hyakumonogatari and Toriyama Sekien", "Lack of independent eyewitness folk-attestation outside the literary tradition"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Edo-period kaidan ghost-story tradition",
+        "Yōkai art (especially Toriyama Sekien)",
+        "Kyoto urban legend tradition"
+      ],
+      "stories": [
+        "Shokoku Hyakumonogatari Kyoto wanyūdō / katawaguruma tale",
+        "Toriyama Sekien's Konjaku Gazu Zoku Hyakki entry"
+      ],
+      "beliefs": "Wanyūdō is widely recognised as one of the canonical Edo-period yokai; modern Japanese readers encounter it primarily through yōkai art and popular media rather than as a literally believed road-haunter."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
+      "literature": [
+        "Shokoku Hyakumonogatari (1677)",
+        "Toriyama Sekien, Konjaku Gazu Zoku Hyakki (1779)",
+        "Mizuki Shigeru, GeGeGe no Kitarō (1960– )"
+      ],
+      "film_tv": [
+        "Hell Girl (Jigoku Shōjo, 2005) — character named Wanyūdō",
+        "GeGeGe no Kitarō animated series (multiple incarnations)"
+      ],
+      "games": [
+        "Nioh (Team Ninja, 2017)",
+        "Ōkami (Capcom, 2006)",
+        "Yo-kai Watch (Level-5)"
+      ],
+      "music": [],
       "other": []
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Toriyama Sekien", "affiliation": "Edo-period ukiyo-e artist", "contribution": "Codified visual iconography of wanyūdō in 1779", "period": "Late 18th century" },
+      { "name": "Komatsu Kazuhiko", "affiliation": "International Research Center for Japanese Studies", "contribution": "Modern yōkai studies, including treatments of wanyūdō", "period": "Late 20th–21st century" },
+      { "name": "Michael Dylan Foster", "affiliation": "University of California, Davis", "contribution": "English-language yōkai scholarship including The Book of Yōkai (2015)", "period": "21st century" }
+    ],
+    "organizations": [
+      { "name": "International Research Center for Japanese Studies (Nichibunken)", "url": "https://www.nichibun.ac.jp/", "focus": "Major academic center for yōkai research" }
+    ],
+    "ongoing_studies": "Wanyūdō is engaged with within Japanese folkloristics, yōkai studies, and Edo-period cultural history."
   },
-  "sources": []
+
+  "sources": [
+    {
+      "id": "wikipedia-wanyudo",
+      "type": "website",
+      "title": "Wanyūdō",
+      "url": "https://en.wikipedia.org/wiki/Wany%C5%AB%C5%8D",
+      "publication": "Wikipedia",
+      "accessed": "2026-05-07"
+    },
+    {
+      "id": "shokoku-1677",
+      "type": "book",
+      "title": "Shokoku Hyakumonogatari (Hundred Tales from Various Provinces)",
+      "publication": "Edo-period publisher",
+      "date": "1677"
+    },
+    {
+      "id": "sekien-1779",
+      "type": "book",
+      "title": "Konjaku Gazu Zoku Hyakki (Supplement to the Hundred Demons of the Past and Present)",
+      "authors": ["Toriyama Sekien"],
+      "publication": "Edo-period publisher",
+      "date": "1779"
+    },
+    {
+      "id": "foster-2015",
+      "type": "book",
+      "title": "The Book of Yōkai: Mysterious Creatures of Japanese Folklore",
+      "authors": ["Michael Dylan Foster"],
+      "publication": "University of California Press",
+      "date": "2015",
+      "isbn": "978-0520271029"
+    }
+  ]
 }
